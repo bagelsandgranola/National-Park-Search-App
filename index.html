@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>YouTube video finder</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="grid.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    
+<div>
+
+    <h2> Search for National Parks by State</h2>
+    <p> I'm looking for National Parks in... </p>
+
+    <div class = "checkboxes"></div>
+    <form id="state-selector" class="col-6">
+
+    <button type="submit" id="submit" class="right-container">Search</button>
+
+    <p class = "js-error-message"></p>
+
+    </form>
+    </div>
+
+</div>
+
+<section id="results" class ="hidden">
+<h2> Search results</h2>
+<ul id="results-list" class="results-list"></ul>
+</section>
+    
+    <script src="index.js"></script>
+</body>
