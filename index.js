@@ -75,11 +75,12 @@ function formatParams (states){
 function displayResults (responseJSON) {
 
         $('#results-list').empty();
+        var maxResults = $('#maxResults').val();
 
         var parks = [];
         parks = responseJSON.data;
         console.log("data array", parks);
-        for (let i=0; i< parks.length; i++)
+        for (let i=0; i< maxResults; i++)
         {
             $('#results-list').append(`<li> <a href="${parks[i].url}">${parks[i].fullName}</a></br> <p>${parks[i].description}</p></br> </li>`)
             console.log(parks[i].fullName);
